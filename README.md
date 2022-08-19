@@ -6,6 +6,7 @@
 # This demo learning 
 ## 2nd subject line
 stanza, a division of a poem consisting of two or more lines arranged together as a unit. More specifically, a stanza usually is a group of lines arranged together in a recurring pattern of metrical lengths and a sequence of rhymes.
+Some of the most common stanzaic forms are designated by the number of lines in each unit—e.g., tercet or terza rima (three lines) and ottava rima (eight lines). Other forms are named for their inventors or best-known practitioners or for the work in which they first were heavily used—e.g., 
 ## 3rd Subject line
 The structure of a stanza (also called a strophe or stave) is determined by the number of lines, the dominant metre, and the rhyme scheme. Thus, a stanza of four lines of iambic pentameter, rhyming abab, could be described as a quatrain.
 <!---
