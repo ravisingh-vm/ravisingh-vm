@@ -1,0 +1,12 @@
+- name: Creating Docker Container Through Ansible
+  hosts: localhost
+  tasks:
+  - name: Docker Container
+    docker_container:
+      name: ravi-jenkins
+      image: demo-jenkins-1
+      state: started
+      tty: true
+      detach: true
+      volumes:
+      - /home/ravisingh/Documents/microservice/dockerBind:/var/jenkins_home
