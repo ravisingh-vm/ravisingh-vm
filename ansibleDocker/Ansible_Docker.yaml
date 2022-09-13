@@ -4,7 +4,7 @@
   - name: Docker Container
     docker_container:
       name: ravi-jenkins
-      image: demo-jenkins-1
+      image: ravisinghvm/jenkins ## demo-jenkins-1
       state: started
       tty: true
       detach: true
