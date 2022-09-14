@@ -1,0 +1,25 @@
+1. Create a EC2 Instance on the AWS / Best way terraform
+2. Install the AWS CLI - if using EC2
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version        # Confirm the installation with the following command. 
+
+3. Install eksctl utility on the host
+
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
+eksctl version   # Confirm the installation with the following command. 
+
+4. Assign the IAM Roles to the EC2 / Create a role if not available with below 
+
+-> EKS, CloudFormation, EC2 (read,write,list), AutoScalling, System Manager (read, List)
+
+Attach  the role to the EC2 | Select EC2 -> Action -> Security -> Modify IAM Roles
+
+5. Create a Cluster 
+eksctl create cluster --name demo-kube --region ap-south-1 --node-type t2.small --nodes-min 2 --nodes-max 2
+
+Note :: it will take 15 -20 mins to create cluster, it will create the cluster with help of cloud formation stack
+
