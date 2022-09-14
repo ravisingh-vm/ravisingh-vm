@@ -23,3 +23,5 @@ eksctl create cluster --name demo-kube --region ap-south-1 --node-type t2.small 
 
 Note :: it will take 15 -20 mins to create cluster, it will create the cluster with help of cloud formation stack
 
+5. For deleting a cluster 
+eksctl delete cluster <clusterName> --region <ap-south-1>
